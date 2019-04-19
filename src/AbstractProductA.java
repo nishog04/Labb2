@@ -1,9 +1,4 @@
-abstract class AbstractProductA extends Client {
+abstract class AbstractProductA {
 
-    /*
-    Ärver klassen Client. Innehåller en abstrakt metod.
-     */
-
-    public abstract void product();
-
+    public abstract AbstractProductA product();
 }

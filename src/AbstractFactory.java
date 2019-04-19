@@ -1,11 +1,6 @@
-abstract class AbstractFactory extends Client {
+abstract class AbstractFactory {
 
-    /*
-    Ärver klassen Client. Här finns två abstrakta metoder.
-     */
-
-    public abstract void CreateProductA();
-
-    public abstract void CreateProductB();
+    public abstract AbstractProductA CreateProductA();
+    public abstract AbstractProductB CreateProductB();
 
 }

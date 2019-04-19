@@ -2,22 +2,11 @@ import java.util.Scanner;
 
 public class Client {
 
-    /*
-    Härifrån utgår applikationen. Den innehåller en switchsats som är inbakad i en while-loop. Loopen
-    bryts först när "5" matas in.
-
-    I varje switchsats skapas instanser av relevanta objekt (t.ex. ConcreteFactory1 och ProductA1).
-     */
-
-
-
     public static void main(String[] args) {
 
         String choice = null;
 
         AbstractFactory af;
-        AbstractProductA apa;
-        AbstractProductB apb;
 
         while (choice != "5") {
 
@@ -36,26 +25,18 @@ public class Client {
                 case "1":
                     af = new ConcreteFactory1();
                     af.CreateProductA();
-                    apa = new ProductA1();
-                    apa.product();
                     break;
                 case "2":
                     af = new ConcreteFactory1();
                     af.CreateProductB();
-                    apb = new ProductB1();
-                    apb.product();
                     break;
                 case "3":
                     af = new ConcreteFactory2();
                     af.CreateProductA();
-                    apa = new ProductA2();
-                    apa.product();
                     break;
                 case "4":
                     af = new ConcreteFactory2();
                     af.CreateProductB();
-                    apb = new ProductB2();
-                    apb.product();
                     break;
                 case "5":
                     System.exit(0);
@@ -68,8 +49,5 @@ public class Client {
                 e.printStackTrace();
             }
         }
-
-
-
     }
 }

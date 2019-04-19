@@ -1,9 +1,4 @@
 abstract class AbstractProductB {
 
-    /*
-    Ärver klassen Client. Innehåller en abstrakt metod.
-     */
-
-    public abstract void product();
-
+    public abstract AbstractProductB product();
 }

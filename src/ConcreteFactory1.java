@@ -1,29 +1,14 @@
 public class ConcreteFactory1 extends AbstractFactory {
 
-    /*
-    Denna klass ärver AbstractFactory. Här finns överskuggas den abstrakta klassens metoder
-     */
+    public AbstractProductA CreateProductA() {
 
-
-    @Override
-    public void CreateProductA() {
-        System.out.println("Creating product A from factory 1");
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        System.out.println("Shipping...");
+        AbstractProductA apa = new ProductA1();
+        return apa.product();
     }
 
-    @Override
-    public void CreateProductB() {
-        System.out.println("Creating product B from factory 1");
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        System.out.println("Shipping...");
+    public AbstractProductB CreateProductB() {
+
+        AbstractProductB apb = new ProductB1();
+        return apb.product();
     }
 }
