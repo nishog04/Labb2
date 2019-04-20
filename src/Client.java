@@ -7,6 +7,8 @@ public class Client {
         String choice = null;
 
         AbstractFactory af;
+        AbstractProductA apa;
+        AbstractProductB apb;
 
         while (choice != "5") {
 
@@ -24,19 +26,23 @@ public class Client {
             switch (choice) {
                 case "1":
                     af = new ConcreteFactory1();
-                    af.CreateProductA();
+                    apa = af.CreateProductA();
+                    apa.product();
                     break;
                 case "2":
                     af = new ConcreteFactory1();
-                    af.CreateProductB();
+                    apb = af.CreateProductB();
+                    apb.product();
                     break;
                 case "3":
                     af = new ConcreteFactory2();
-                    af.CreateProductA();
+                    apa = af.CreateProductA();
+                    apa.product();
                     break;
                 case "4":
                     af = new ConcreteFactory2();
-                    af.CreateProductB();
+                    apb = af.CreateProductB();
+                    apb.product();
                     break;
                 case "5":
                     System.exit(0);

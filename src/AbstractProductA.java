@@ -1,4 +1,4 @@
 abstract class AbstractProductA {
 
-    public abstract AbstractProductA product();
+    public abstract void product();
 }
